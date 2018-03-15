@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\AreaStates">
+      <UniqueIdentifier>{91489983-7846-4dec-a38f-fea1db4a92de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AreaStates">
+      <UniqueIdentifier>{4ffb0a13-73f9-49cf-a336-4b626e4a8055}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,6 +30,24 @@
     <ClCompile Include="Factory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArenaState.cpp">
+      <Filter>Source Files\AreaStates</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleState.cpp">
+      <Filter>Source Files\AreaStates</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestboardState.cpp">
+      <Filter>Source Files\AreaStates</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopState.cpp">
+      <Filter>Source Files\AreaStates</Filter>
+    </ClCompile>
+    <ClCompile Include="TownState.cpp">
+      <Filter>Source Files\AreaStates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Opponent.h">
@@ -31,6 +55,27 @@
     </ClInclude>
     <ClInclude Include="Factory.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TownState.h">
+      <Filter>Header Files\AreaStates</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestboardState.h">
+      <Filter>Header Files\AreaStates</Filter>
+    </ClInclude>
+    <ClInclude Include="ArenaState.h">
+      <Filter>Header Files\AreaStates</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleState.h">
+      <Filter>Header Files\AreaStates</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopState.h">
+      <Filter>Header Files\AreaStates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

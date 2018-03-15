@@ -139,13 +139,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Area.cpp" />
+    <ClCompile Include="ArenaState.cpp" />
+    <ClCompile Include="BattleState.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Opponent.cpp" />
+    <ClCompile Include="QuestboardState.cpp" />
+    <ClCompile Include="ShopState.cpp" />
+    <ClCompile Include="TownState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Area.h" />
+    <ClInclude Include="AreaState.h" />
+    <ClInclude Include="ArenaState.h" />
+    <ClInclude Include="BattleState.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Opponent.h" />
+    <ClInclude Include="QuestboardState.h" />
+    <ClInclude Include="ShopState.h" />
+    <ClInclude Include="TownState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

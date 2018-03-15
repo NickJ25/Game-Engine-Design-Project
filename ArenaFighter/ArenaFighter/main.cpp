@@ -1,8 +1,9 @@
 #include <iostream>
+#include "Area.h"
 
 using namespace std;
 
 int main() {
-	cout << "Hello World" << endl;
-	system("PAUSE");
+	cout << "Game Start" << endl;
+	Area a;
 }
