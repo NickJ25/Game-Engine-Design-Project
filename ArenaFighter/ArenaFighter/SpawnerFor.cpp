@@ -1,3 +1,11 @@
 #include "SpawnerFor.h"
+#include "Spawner.h"
 
-Item* createItem() { return new T(); }
+//Weapon* createWeapon() { return new T(); }
+
+//template<class T>
+//Weapon* SpawnerFor<T>::createWeapon()
+//{
+//	return new T();
+//}
+

@@ -21,6 +21,12 @@ void ShopState::handle(Area* area)
 		area->getCurrentState()->handle(area);
 		break;
 	// Use spawner to create item
+	case(2):
+		Spawner* weaponCreator = new SpawnerFor<IronSword>();
+		weaponCreator->createWeapon();
+		area->setCurrent(area->getTownState());
+		area->getCurrentState()->handle(area);
+		break;
 	}
 
 }

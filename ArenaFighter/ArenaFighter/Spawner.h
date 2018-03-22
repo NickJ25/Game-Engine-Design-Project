@@ -1,9 +1,9 @@
 #pragma once
-#include "Item.h"
+#include "Weapon.h"
 
 class Spawner
 {
 public:
 	virtual ~Spawner() {}
-	virtual Item* createItem() = 0;
+	virtual Weapon* createWeapon() = 0;
 };

@@ -10,7 +10,7 @@ public:
 		type = "Weapon";
 		cost = 20;
 		description = "An average iron sword";
-
+		cout << "WEAPON CREATED" << endl;
 	}
 	void equip();
 };

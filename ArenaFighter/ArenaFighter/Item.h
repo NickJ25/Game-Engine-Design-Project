@@ -11,7 +11,6 @@ protected:
 	int cost;
 
 public:
-	virtual ~Item() {} // for spawner
 	virtual void equip() = 0;
 	int getCost();
 	string getName();
