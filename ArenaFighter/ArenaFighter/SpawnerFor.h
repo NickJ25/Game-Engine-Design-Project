@@ -4,6 +4,10 @@
 template <class T>
 class SpawnerFor : public Spawner
 {
+//public:
+//	virtual Weapon* createWeapon() { return new T(); }
+//};
+
 public:
-	virtual Weapon* createWeapon() { return new T(); }
+	virtual Item* createItem() { return new T(); }
 };

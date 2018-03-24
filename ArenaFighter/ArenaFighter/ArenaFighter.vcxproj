@@ -145,6 +145,7 @@
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="IronSword.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LeatherArmour.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Opponent.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Factory.h" />
     <ClInclude Include="IronSword.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="LeatherArmour.h" />
     <ClInclude Include="Opponent.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="QuestboardState.h" />

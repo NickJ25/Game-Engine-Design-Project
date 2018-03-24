@@ -11,6 +11,7 @@ protected:
 	int cost;
 
 public:
+	virtual ~Item() {};
 	virtual void equip() = 0;
 	int getCost();
 	string getName();

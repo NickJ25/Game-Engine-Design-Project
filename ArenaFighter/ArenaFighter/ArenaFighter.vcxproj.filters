@@ -66,6 +66,9 @@
     <ClCompile Include="SpawnerFor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LeatherArmour.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Opponent.h">
@@ -115,6 +118,9 @@
     </ClInclude>
     <ClInclude Include="Spawner.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeatherArmour.h">
+      <Filter>Header Files\Items</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

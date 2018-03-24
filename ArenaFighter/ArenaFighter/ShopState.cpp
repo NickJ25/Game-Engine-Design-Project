@@ -5,6 +5,7 @@ using namespace std;
 
 ShopState::ShopState()
 {
+
 }
 
 void ShopState::handle(Area* area)
@@ -15,18 +16,35 @@ void ShopState::handle(Area* area)
 		"\n (2) Buy Armour" <<
 		"\n (3) Buy Weapon" << endl;
 	cin >> choice;
+
 	switch (choice) {
-	case(1):
-		area->setCurrent(area->getTownState());
-		area->getCurrentState()->handle(area);
-		break;
-	// Use spawner to create item
-	case(2):
-		Spawner* weaponCreator = new SpawnerFor<IronSword>();
-		weaponCreator->createWeapon();
+	case 1:
+	{
+		// Back to Town
 		area->setCurrent(area->getTownState());
 		area->getCurrentState()->handle(area);
 		break;
 	}
+	case 2:
+	{
+		// Creates an Iron Sword
+		Spawner* itemCreator = new SpawnerFor<IronSword>();
+		itemCreator->createItem();
+		area->setCurrent(area->getTownState());
+		area->getCurrentState()->handle(area);
+		break;
+	}
+	case 3:
+	{
+		// Creates Leather Armour
+		Spawner * itemCreator = new SpawnerFor<LeatherArmour>();
+		itemCreator->createItem();
+		area->setCurrent(area->getTownState());
+		area->getCurrentState()->handle(area);
+		break;
+	}
+
+	}
+
 
 }
