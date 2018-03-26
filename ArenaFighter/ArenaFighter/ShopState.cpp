@@ -13,12 +13,12 @@ void ShopState::handle(Area* area)
 	int choice = 0;
 	cout << "You are in town, where do you want to go?" <<
 		"\n (1) Go to Town" <<
-		"\n (2) Buy Armour" <<
-		"\n (3) Buy Weapon" << endl;
-	cin >> choice;
+		"\n (2) Buy Weapon" <<
+		"\n (3) Buy Armour" << endl;
 
 	switch (choice) {
 	case 1:
+	cin >> choice;
 	{
 		// Back to Town
 		area->setCurrent(area->getTownState());
@@ -29,7 +29,7 @@ void ShopState::handle(Area* area)
 	{
 		// Creates an Iron Sword
 		Spawner* itemCreator = new SpawnerFor<IronSword>();
-		itemCreator->createItem();
+		Item* item = itemCreator->createItem();
 		area->setCurrent(area->getTownState());
 		area->getCurrentState()->handle(area);
 		break;
@@ -38,7 +38,7 @@ void ShopState::handle(Area* area)
 	{
 		// Creates Leather Armour
 		Spawner * itemCreator = new SpawnerFor<LeatherArmour>();
-		itemCreator->createItem();
+		Item* item = itemCreator->createItem();
 		area->setCurrent(area->getTownState());
 		area->getCurrentState()->handle(area);
 		break;
